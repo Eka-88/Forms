@@ -4,7 +4,6 @@
 * Autoprefixer: v9.7.6
 * Browsers: last 4 version
 */
-
 @media (max-width:1024px){
     .container{
         width: 90%;
@@ -260,6 +259,30 @@
     .right-block img{
           height: 380px;
        }
+    /* <end section4> */
+    /* <start menu section> */
+    .menu-wrapper{
+        justify-content: center;
+    }
+    .menu-block{
+        width: 80%;     
+    }
+    .menu-block:nth-child(2){
+        margin-top: 16px;
+    }
+    /* <end menu section> */
+    /* <start rooms section> */
+    .rooms-form{
+        width: 95%;
+    }
+    .chek-in{
+        width: 50%;
+    }
+    .rooms-tbn{
+        width: 50%;
+    }
+
+    /* <end rooms section> */
     /* <section 5> */
     .section5{
         padding-top: 50px;
@@ -496,6 +519,28 @@
     .contact-block:nth-child(3){
         margin-top: 20px;
     }
+    /* <menu section> */
+    .menu-block{
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .menu-title{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .menu-btn{
+        width: 50px;
+        height: 50px;
+    }
+    /* <rooms section> */
+    .chek-in{
+        width: 45%;
+    }
+    .rooms-tbn{
+        width: 45%;
+    }
+
 }
 @media(max-width:350px){
     /* <section2> */
@@ -565,7 +610,15 @@
         font-size: 18px;
         line-height: 25px;
        }
-       /* <section 4> */
+       /* <end section 4> */
+       /* <rooms section> */
+    .chek-in{
+        width: 80%;
+    }
+    .rooms-tbn{
+        width: 80%;
+        margin-top: 16px;
+    }
        /* <section 5> */
     .section5-title{
         font-size: 18px;

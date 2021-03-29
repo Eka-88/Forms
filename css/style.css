@@ -378,6 +378,110 @@
      display: block;
  }
  /* <end of section 4> */
+ /* <section menu styles> */
+ .section-menu{
+     padding: 90px 0;
+ }
+ .menu-wrapper{
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+ }
+ .menu-block:nth-child(3),
+ .menu-block:nth-child(4){
+     margin-top: 16px;
+ }
+ .menu-block{
+     width: 48%;
+     height: 190px;
+     background-color: #F8F8F8;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+ .menu-block img{
+     max-width: 168px;
+     width: 100%;
+ }
+ .menu-text-block{
+     max-width: 260px;
+     width: 100%;
+ }
+ .menu-title{
+     font-size: 18px;
+     font-family: 'Poppins-SemiBold';
+     line-height: 27px;
+     margin-bottom: 10px;
+ }
+ .menu-text{
+     font-size: 14px;
+     font-family: 'Poppins-Medium';
+     line-height: 21px;
+     color: #B1B1B1;
+ }
+ .menu-btn{
+     background-color: #5863F8;
+     color: #FFFFFF;
+     width: 60px;
+     height: 60px;
+     border: none;
+     cursor: pointer;
+ }
+ .menu-form{
+     align-self: flex-end;
+ }
+ /* <section menu styles end> */
+ /* <rooms section start> */
+.rooms-section{
+    background-color:#F8F8F8 ;
+    padding: 53px 0;
+}
+.rooms-form{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap:wrap;
+}
+.chek-in{
+    display: flex;
+    flex-direction: column;
+    max-width: 260px;
+    width: 24%;
+}
+label{
+    color: #5863F8;
+    font-size: 13px;
+    font-family: 'Poppins-Medium';
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+.input-in{
+    /* max-width: 260px; */
+    width: 100%;
+    height: 60px;
+    border: 2px solid #E8E8E8;
+}
+.input-in::placeholder{
+    padding: 20px;
+    color: #CECECE;
+    font-size: 13px;
+    font-family: 'Poppins-Regular';
+}
+.rooms-tbn{
+    max-width: 260px;
+    width: 24%;
+    height: 60px;
+    background-color:#5863F8;
+    color: #FFFFFF;
+    font-size: 13px;
+    font-family: 'Poppins-SemiBold';
+    border: none;
+    align-self: flex-end;
+    cursor: pointer;
+}
+/* <rooms section end> */
  /* <section 5> */
  .section5{
      padding-top: 90px;
