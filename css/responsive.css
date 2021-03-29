@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @media (max-width:1024px){
     .container{
         width: 90%;
@@ -313,14 +320,19 @@
         display: block;
     }
     .fa-bars:hover{
-        transform:scale(1.2);
+        -webkit-transform:scale(1.2);
+            -ms-transform:scale(1.2);
+                transform:scale(1.2);
     }
     .title{
         font-size: 15px;;
     }
     /* <secttion 2> */
     .box-wrapper{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .left-box{
         width: 90%;
@@ -387,7 +399,10 @@
     /* <section3 end> */
     /* <section4> */
     .section4-wrapper{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .left-block{
         width: 100%;
@@ -424,7 +439,8 @@
     .section5-image:last-child{
         height: 230px;
         width: 100%;
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
         margin-top: 10px;
     } 
     /* <section 5 end> */
@@ -452,7 +468,10 @@
        }
     /* <contact page responsive>    */
     .form-wrapper{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .input-wrapper{
         margin-top:20px;
@@ -468,7 +487,10 @@
 }
 @media(max-width:500px){
     .contact-block-wrapper{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     } 
     .contact-block:nth-child(2),
     .contact-block:nth-child(3){
@@ -524,7 +546,9 @@
         margin-top: 10px;
        }
     .block-wrapper{
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     /* <section3 end> */
     /* <section4> */
@@ -564,8 +588,12 @@
         margin-top: 30px;
     }
     .footer-wrapper{
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 }
    
