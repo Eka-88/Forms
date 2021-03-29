@@ -262,7 +262,9 @@
     /* <end section4> */
     /* <start menu section> */
     .menu-wrapper{
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     .menu-block{
         width: 80%;     
@@ -522,8 +524,13 @@
     /* <menu section> */
     .menu-block{
         height: auto;
-        flex-direction: column;
-        align-items: flex-start;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
     }
     .menu-title{
         font-size: 16px;

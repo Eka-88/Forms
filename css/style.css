@@ -384,9 +384,14 @@
  }
  .menu-wrapper{
      width: 100%;
+     display: -webkit-box;
+     display: -ms-flexbox;
      display: flex;
-     justify-content: space-between;
-     flex-wrap: wrap;
+     -webkit-box-pack: justify;
+         -ms-flex-pack: justify;
+             justify-content: space-between;
+     -ms-flex-wrap: wrap;
+         flex-wrap: wrap;
  }
  .menu-block:nth-child(3),
  .menu-block:nth-child(4){
@@ -396,9 +401,15 @@
      width: 48%;
      height: 190px;
      background-color: #F8F8F8;
+     display: -webkit-box;
+     display: -ms-flexbox;
      display: flex;
-     justify-content: space-between;
-     align-items: center;
+     -webkit-box-pack: justify;
+         -ms-flex-pack: justify;
+             justify-content: space-between;
+     -webkit-box-align: center;
+         -ms-flex-align: center;
+             align-items: center;
  }
  .menu-block img{
      max-width: 168px;
@@ -429,7 +440,8 @@
      cursor: pointer;
  }
  .menu-form{
-     align-self: flex-end;
+     -ms-flex-item-align: end;
+         align-self: flex-end;
  }
  /* <section menu styles end> */
  /* <rooms section start> */
@@ -439,14 +451,26 @@
 }
 .rooms-form{
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content:space-between;
-    align-items: center;
-    flex-wrap:wrap;
+    -webkit-box-pack:justify;
+        -ms-flex-pack:justify;
+            justify-content:space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap:wrap;
+        flex-wrap:wrap;
 }
 .chek-in{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     max-width: 260px;
     width: 24%;
 }
@@ -463,6 +487,30 @@ label{
     height: 60px;
     border: 2px solid #E8E8E8;
 }
+.input-in::-webkit-input-placeholder{
+    padding: 20px;
+    color: #CECECE;
+    font-size: 13px;
+    font-family: 'Poppins-Regular';
+}
+.input-in::-moz-placeholder{
+    padding: 20px;
+    color: #CECECE;
+    font-size: 13px;
+    font-family: 'Poppins-Regular';
+}
+.input-in:-ms-input-placeholder{
+    padding: 20px;
+    color: #CECECE;
+    font-size: 13px;
+    font-family: 'Poppins-Regular';
+}
+.input-in::-ms-input-placeholder{
+    padding: 20px;
+    color: #CECECE;
+    font-size: 13px;
+    font-family: 'Poppins-Regular';
+}
 .input-in::placeholder{
     padding: 20px;
     color: #CECECE;
@@ -478,7 +526,8 @@ label{
     font-size: 13px;
     font-family: 'Poppins-SemiBold';
     border: none;
-    align-self: flex-end;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
     cursor: pointer;
 }
 /* <rooms section end> */
